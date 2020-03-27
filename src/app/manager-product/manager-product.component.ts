@@ -26,7 +26,7 @@ return  this.pService.getProduts().subscribe(data => this.products=data)
 }
 addProduct(){
 this.pService.addProduct(this.product).subscribe(data => {
-  this.router.navigateByUrl('/home')
+  this.router.navigateByUrl('/managerProduct')
 });
 }
 getProduct(){
@@ -41,7 +41,11 @@ this.pService.editProduct(this.product).subscribe(data => {
   this.router.navigateByUrl('/managerProduct')
 } )
 }
-removeProduct(){
+removeProduct(id){
+  return this.pService.removeProduct(this.product).subscribe(data => {
+   this.products= this.products.filter(product=>product.id != id )
 
+  })
+ 
 }
 }

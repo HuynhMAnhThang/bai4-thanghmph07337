@@ -21,4 +21,7 @@ return this.http.post<Product>(this.api,product);
 editProduct(product):Observable<Product>{
 return this.http.put<Product>(`${this.api}/${product.id}`,product);
   }
+  removeProduct(id):Observable<Product>{
+    return this.http.delete<Product>(`${this.api}/${id}`);
+  }
 }
