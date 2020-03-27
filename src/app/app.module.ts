@@ -10,6 +10,10 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductServicesService } from './services/product-services.service';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ManagerProductComponent } from './manager-product/manager-product.component';
+import { BannerHomeComponent } from './banner-home/banner-home.component';
+import { FooterWebComponent } from './footer-web/footer-web.component';
+import { BannerProductComponent } from './banner-product/banner-product.component';
+import { Loi404Component } from './loi404/loi404.component';
 
 
 @NgModule({
@@ -19,6 +23,10 @@ import { ManagerProductComponent } from './manager-product/manager-product.compo
       ProductListComponent,
       ProductDetailComponent,
       ManagerProductComponent,
+      BannerHomeComponent,
+      FooterWebComponent,
+      BannerProductComponent,
+      Loi404Component,
 
    ],
    imports: [
