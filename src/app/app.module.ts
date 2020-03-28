@@ -14,6 +14,8 @@ import { BannerHomeComponent } from './banner-home/banner-home.component';
 import { FooterWebComponent } from './footer-web/footer-web.component';
 import { BannerProductComponent } from './banner-product/banner-product.component';
 import { Loi404Component } from './loi404/loi404.component';
+import { HeaderNavComponent } from './header-nav/header-nav.component';
+import { ShopNowComponent } from './shop-now/shop-now.component';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { Loi404Component } from './loi404/loi404.component';
       FooterWebComponent,
       BannerProductComponent,
       Loi404Component,
+      HeaderNavComponent,
+      ShopNowComponent,
 
    ],
    imports: [
